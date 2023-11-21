@@ -79,7 +79,7 @@ const Footer = () => {
                   </h4>
                   {/* Add an icon to indicate the toggle state */}
                   {windowWidth < 668 && (
-                    <span className="max-lg:mr-10">
+                    <span className="max-lg:mr-10 text-blue-950">
                       {showLinks[index] ? <AiOutlineUp /> : <AiOutlineDown />}
                     </span>
                   )}
