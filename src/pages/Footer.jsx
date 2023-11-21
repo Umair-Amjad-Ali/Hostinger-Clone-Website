@@ -73,18 +73,17 @@ const Footer = () => {
                   className="flex items-center mb-3 cursor-pointer max-lg:justify-between"
                   onClick={() => toggleLinks(index)}
                 >
-                  {/* Add an icon or any element indicating the toggle */}
                   <h4 className="text-lg font-medium text-blue-950 uppercase ">
                     {section.title}
                   </h4>
-                  {/* Add an icon to indicate the toggle state */}
+
                   {windowWidth < 668 && (
                     <span className="max-lg:mr-10 text-blue-950">
                       {showLinks[index] ? <AiOutlineUp /> : <AiOutlineDown />}
                     </span>
                   )}
                 </div>
-                {/* Render links only if showLinks state is true */}
+
                 {(windowWidth < 668 && showLinks[index]) ||
                 windowWidth >= 668 ? (
                   <ul>
